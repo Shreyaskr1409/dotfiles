@@ -1,0 +1,132 @@
+/* Define Gruvbox Material Dark colors */
+@define-color bg        #161616;
+@define-color bg1       #282828;
+@define-color fg        #DDC7A1;
+@define-color gray      #665c54;
+@define-color blue      #076678;
+@define-color tint1     #427b58;
+@define-color yellow    #b57614;
+@define-color red       #9d0006;
+
+/* Reset & base */
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "Iosevka Nerd Font";
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+    color: @fg;
+}
+
+/* Window */
+window#waybar {
+    background: transparent;
+    border: 0px solid @bg1;
+}
+
+/* Tooltip */
+tooltip {
+    background-color: @bg;
+    border: 2px solid @blue;
+    color: @fg;
+}
+
+/* Common modules */
+#clock,
+#tray,
+#cpu,
+#memory,
+#backlight,
+#battery,
+#network,
+#pulseaudio {
+    margin: 0px 2px;
+    padding: 2px 8px;
+}
+
+/* Workspaces */
+#workspaces {
+    background-color: @bg;
+    border: 2px solid @bg1;
+}
+
+#workspaces button {
+    min-width: 0;
+    padding: 2px 4px;
+    color: @gray;
+    box-shadow: inset 0 -3px transparent;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    background-color: @bg1;
+    color: @fg;
+    box-shadow: inset 0 -3px @tint1;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: @fg;
+}
+
+/* Clock */
+#clock {
+    background-color: @bg;
+    border: 2px solid @bg1;
+    color: @fg;
+}
+
+#clock tooltip {
+    background-color: rgba(22, 22, 22, 0.8); /* dark + 80% opacity */
+    padding: 10px 15px;                      /* vertical + horizontal padding */
+    border-radius: 8px;                      /* rounded corners for style */
+}
+
+/* Tray */
+#tray {
+    background-color: transparent;
+    border: 2px solid @blue;
+    color: @fg;
+}
+
+/* Battery */
+#battery {
+    background-color: @bg;
+    border: 2px solid @bg1;
+    color: @fg;
+}
+
+/* CPU, memory, network, backlight, audio */
+#cpu,
+#memory,
+#network,
+#backlight,
+#pulseaudio {
+    background-color: @bg;
+    border: 2px solid @bg1;
+    color: @fg;
+}
+
+/* Critical states */
+#cpu.critical,
+#memory.critical {
+    background-color: @red;
+    border: 2px solid @bg1;
+    color: @fg;
+}
+
+#battery.warning {
+    background-color: @yellow;
+    border: 2px solid @bg1;
+    color: @bg;
+}
+
+#battery.critical,
+#battery.urgent {
+    background-color: @red;
+    border: 2px solid @bg1;
+    color: @fg;
+}
+
