@@ -1,0 +1,15 @@
+0000000000000000000000000000000000000000 5f67fe0029e891d786741467cad563352e29ea83 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1738944200 +0530	commit (initial): first commit
+5f67fe0029e891d786741467cad563352e29ea83 5f67fe0029e891d786741467cad563352e29ea83 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1738944201 +0530	Branch: renamed refs/heads/main to refs/heads/main
+5f67fe0029e891d786741467cad563352e29ea83 041d144cb365e82a3a7f0a74373c8f24d4f509ab Shreyaskr1409 <shreyaskr.0914@gmail.com> 1739164082 +0530	commit: 10 February 2025
+041d144cb365e82a3a7f0a74373c8f24d4f509ab 7628b36ea133c0d80fa49f1cf618be8fb7b3cc94 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1739473168 +0530	commit: Treesitter setup done
+7628b36ea133c0d80fa49f1cf618be8fb7b3cc94 0a29d210cfe543432ceca710ea0636fee5045928 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1739480243 +0530	commit: Added lsp settings but jdtls and a few more do not work, while some work perfectly
+0a29d210cfe543432ceca710ea0636fee5045928 0c1dc2ddaced36645739ac2b5e1f589284e25479 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1739734377 +0530	commit: Java finally set up
+0c1dc2ddaced36645739ac2b5e1f589284e25479 1c582a52a795b70a916dec189321af9010bf8ae5 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1740084305 +0530	commit: Gruvbox added with some go lsp configs
+1c582a52a795b70a916dec189321af9010bf8ae5 7457b0d214b96ec55a0a51672a25abde06105f68 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1740659324 +0530	commit: Few changes 27 February 2025
+7457b0d214b96ec55a0a51672a25abde06105f68 4eb087fec3f4d221e0a91cd6cffb7f17423441d7 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1741538007 +0530	commit: 9 March 2025
+4eb087fec3f4d221e0a91cd6cffb7f17423441d7 1455263281b95da9a852a1efddf126aec38cf530 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1741797278 +0530	commit: 12 March 2025
+1455263281b95da9a852a1efddf126aec38cf530 c4d2f6ce0b55de0bb1ecc3e6be88a58ae733b7d3 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1742621999 +0530	commit: 22 March 2025
+c4d2f6ce0b55de0bb1ecc3e6be88a58ae733b7d3 d039c79417cb31cefafbfd7e30516fee2acb8205 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1743880516 +0530	commit: 6 april 2025
+d039c79417cb31cefafbfd7e30516fee2acb8205 5503e27fb0d59655cd6c11b88a4e27328b1dc766 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1747468251 +0530	commit: lsp finally working again after new updates
+5503e27fb0d59655cd6c11b88a4e27328b1dc766 ec70c31ad43ac945ea380614aa83d55231b77c27 Shreyaskr1409 <shreyaskr.0914@gmail.com> 1748891814 +0530	commit: file manager added
+ec70c31ad43ac945ea380614aa83d55231b77c27 de6b2adc0ea748a508b21d2f122a26fd745ceaa6 Shreyas <shreyaskr.0914@gmail.com> 1748943423 +0530	commit: made clang config to be windows specific only windows
