@@ -1,6 +1,10 @@
 local M = {}
 
-vim.cmd([[colorscheme gruvbox-material]])
+vim.cmd([[colorscheme sakura]])
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.opt.laststatus=0
+
+-- vim.cmd([[colorscheme gruvbox-material]])
 -- vim.cmd([[colorscheme cold]])
 -- vim.cmd([[colorscheme kanagawa-dragon]])
 -- vim.cmd([[colorscheme kanagawa-wave]])

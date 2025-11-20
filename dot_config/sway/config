@@ -237,14 +237,15 @@ bindsym Shift+Control+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] |
 # gaps inner 5
 workspace 1 gaps horizontal 95
 workspace 1 gaps vertical 35
-workspace 1 gaps inner 5
 workspace 2 gaps horizontal 95
 workspace 2 gaps vertical 35
-workspace 2 gaps inner 5
-workspace 5 gaps inner 5
-workspace 6 gaps inner 5
-workspace 7 gaps inner 5
-workspace 8 gaps inner 5
+# workspace 1 gaps inner 5
+# workspace 2 gaps inner 5
+# workspace 5 gaps inner 5
+# workspace 6 gaps inner 5
+# workspace 7 gaps inner 5
+# workspace 8 gaps inner 5
+
 # workspace 1 gaps inner 0
 # workspace 2 gaps inner 0
 
@@ -271,7 +272,7 @@ set $filemanager nautilus
 #####################SWAYFX##########################
 #####################################################
 blur enable
-corner_radius 10
+# corner_radius 10
 # shadows enable
 # shadow_blur_radius 20
 # shadow_color #000000E0

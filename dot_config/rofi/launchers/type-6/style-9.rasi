@@ -61,7 +61,6 @@ window {
 /*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
-    spacing:                     0px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "imagebox", "listbox" ];
@@ -70,9 +69,9 @@ mainbox {
 imagebox {
     padding:                     10px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/komorebi-1.jpg", width);
+    background-image:            url("~/.config/rofi/images/sunflower.jpeg", height);
     orientation:                 vertical;
-    children:                    [ "inputbar", "dummy", "mode-switcher" ];
+    children:                    [ "inputbar", "dummy"];
 }
 
 listbox {
@@ -80,7 +79,7 @@ listbox {
     padding:                     10px;
     background-color:            transparent;
     orientation:                 vertical;
-    children:                    [ "message", "listview" ];
+    children:                    [ "mode-switcher", "message", "listview" ];
 }
 
 dummy {
@@ -136,7 +135,7 @@ button selected {
 listview {
     enabled:                     true;
     columns:                     2;
-    lines:                       10;
+    lines:                       14;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
