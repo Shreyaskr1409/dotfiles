@@ -1,0 +1,15 @@
+[window]
+    decorations = "Full"
+    opacity = 0.5
+    # opacity = 1.0
+    padding = {x=4, y=0}
+    dynamic_padding = true
+    dimensions = {columns = 135, lines = 35}
+
+[font]
+    normal = { family = "ZedMono NF", style = "Normal" }
+    size = 10.6
+    offset = { x= 0, y = 0 }
+
+[colors.primary]
+    background = "#111111"

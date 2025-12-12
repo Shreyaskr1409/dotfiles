@@ -1,8 +1,9 @@
 local M = {}
 
-vim.cmd([[colorscheme sakura]])
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.opt.laststatus=0
+-- vim.cmd([[colorscheme sakura]])
+vim.cmd([[colorscheme kanagawa-dragon]])
+-- vim.opt.laststatus=0
+vim.opt.showtabline=0
 
 -- vim.cmd([[colorscheme gruvbox-material]])
 -- vim.cmd([[colorscheme cold]])
@@ -27,5 +28,22 @@ vim.opt.autoindent = true  -- Copy indent from current line when starting a new 
 
 vim.opt.scrolloff = 8       -- Start vertical scrolling 8 lines before the edge
 vim.opt.sidescrolloff = 8   -- Start horizontal scrolling 8 columns before the edge
+
+local transparent = false
+local original_bg = nil
+
+function ToggleTransparent()
+    transparent = not transparent
+    if transparent then
+        original_bg = vim.api.nvim_get_hl(0, { name = "Normal" }).bg
+        vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+        print("Transparency ON")
+    else
+        vim.api.nvim_set_hl(0, "Normal", { bg = original_bg })
+        print("Transparency OFF")
+    end
+end
+
+vim.keymap.set("n", "<leader>ct", ToggleTransparent, { desc = "Toggle background transparency" })
 
 return M

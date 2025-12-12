@@ -28,7 +28,7 @@ fi
 
 # Start Waybar in the background
 echo "Starting Waybar..."
-waybar &
+waybar -c ~/.config/waybar/config-hypr.jsonc &
 
 # Optional: Wait a moment and check if Waybar started successfully
 sleep 1

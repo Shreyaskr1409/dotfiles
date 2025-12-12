@@ -6,18 +6,18 @@ require('lualine').setup {
         section_separators = { left = '', right = '' },
     },
     sections = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = {},
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = {},
-        -- lualine_a = {'mode'},
-        -- lualine_b = {'branch', 'diff', 'diagnostics'},
-        -- lualine_c = {'buffers'},
-        -- lualine_x = {'filetype', 'lsp_progress', 'treesitter'},
-        -- lualine_y = {'tabs'},
-        -- lualine_z = {'location'}
+        -- lualine_a = {},
+        -- lualine_b = {},
+        -- lualine_c = {},
+        -- lualine_x = {},
+        -- lualine_y = {},
+        -- lualine_z = {},
+        lualine_a = {'mode'},
+        lualine_b = {'branch', 'diff', 'diagnostics'},
+        lualine_c = {'buffers'},
+        lualine_x = {'filetype', 'lsp_progress', 'treesitter'},
+        lualine_y = {'tabs'},
+        lualine_z = {'location'}
     },
     inactive_sections = {
         lualine_a = {},
@@ -28,12 +28,18 @@ require('lualine').setup {
         lualine_z = {}
     },
     tabline = {
-        lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
-        lualine_c = {'buffers'},
-        lualine_x = {'filetype', 'lsp_progress', 'treesitter'},
-        lualine_y = {'tabs'},
-        lualine_z = {'location'}
+        -- lualine_a = {'mode'},
+        -- lualine_b = {'branch', 'diff', 'diagnostics'},
+        -- lualine_c = {'buffers'},
+        -- lualine_x = {'filetype', 'lsp_progress', 'treesitter'},
+        -- lualine_y = {'tabs'},
+        -- lualine_z = {'location'},
+        lualine_a = {},
+        lualine_b = {},
+        lualine_c = {},
+        lualine_x = {},
+        lualine_y = {},
+        lualine_z = {},
     },
     extensions = {}
 }

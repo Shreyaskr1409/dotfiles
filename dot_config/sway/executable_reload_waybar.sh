@@ -6,7 +6,7 @@ if pgrep -x "waybar" > /dev/null; then
     exit 0
 else
     # Waybar is not running, so start it in the background
-    waybar &
+    waybar -c ~/.config/waybar/config-sway.jsonc &
 fi
 
 # You can add other startup applications here using the same pattern

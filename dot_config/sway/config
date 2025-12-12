@@ -12,7 +12,8 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term wezterm
+# set $term wezterm
+set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -214,8 +215,8 @@ client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
 
 # bindsym $mod+d exec rofi -show drun
 # bindsym $mod+Shift+d exec --no-startup-id ~/.config/rofi/launchers/type-7/launcher.sh
-bindsym $mod+Shift+d exec --no-startup-id ~/.config/rofi/launchers/type-6/launcher.sh
-bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-4/launcher.sh
+bindsym $mod+Shift+d exec --no-startup-id ~/.config/rofi/launchers/type-4/launcher.sh
+bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-6/launcher.sh
 bindsym $mod+p exec --no-startup-id ~/.config/rofi/powermenu/type-5/powermenu.sh
 
 # default_border pixel 2
