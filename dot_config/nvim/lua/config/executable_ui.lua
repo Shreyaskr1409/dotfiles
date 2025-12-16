@@ -1,18 +1,23 @@
 local M = {}
 
 -- vim.cmd([[colorscheme sakura]])
-vim.cmd([[colorscheme kanagawa-dragon]])
--- vim.opt.laststatus=0
-vim.opt.showtabline=0
-
--- vim.cmd([[colorscheme gruvbox-material]])
 -- vim.cmd([[colorscheme cold]])
+-- vim.cmd([[colorscheme gruvbox-material]])
 -- vim.cmd([[colorscheme kanagawa-dragon]])
 -- vim.cmd([[colorscheme kanagawa-wave]])
 -- vim.cmd([[colorscheme rose-pine-main]])
 -- vim.cmd([[colorscheme zenbones]])
 -- vim.cmd([[colorscheme kanagawa-paper-ink]])
--- vim.api.nvim_set_hl(0, "Normal", { bg = "#000000" })
+
+vim.cmd([[colorscheme kanagawa-dragon]])
+vim.api.nvim_set_hl(0, "Normal", { bg = "#111111" })
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#555555", bg = "#1a1a1a" })
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#FF5D62", bg = "#1a1a1a" })
+vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1a1a1a" })
+vim.api.nvim_set_hl(0, "SignColumn", { bg = "#1a1a1a" })
+
+vim.opt.laststatus=3
+-- vim.opt.showtabline=0
 
 vim.opt.number = true
 vim.opt.relativenumber = true
