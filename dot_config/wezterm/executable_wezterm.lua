@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.front_end = "OpenGL"
-config.max_fps = 120
+config.max_fps = 60
 config.default_cursor_style = "BlinkingBlock"
 config.animation_fps = 1
 config.cursor_blink_rate = 500
@@ -11,55 +11,61 @@ config.term = "xterm-256color" -- Set the terminal type
 config.tab_max_width = 17
 config.initial_cols = 135
 config.initial_rows = 35
-
 config.enable_kitty_graphics = true
 
--- config.font = wezterm.font("AnonymicePro Nerd Font", {weight = 'Regular'}) 
--- config.font = wezterm.font("GeistMono NF", {weight = 'Regular', italic=false})
--- config.font = wezterm.font("SpaceMono Nerd Font")
-config.font = wezterm.font("ZedMono NF", {weight = 'Medium'})
--- config.font = wezterm.font("IosevkaTerm NF") 
-config.freetype_load_target = "Normal" -- Can be "Normal", "Light", "Mono", "HorizontalLcd"
-config.freetype_render_target = "HorizontalLcd" -- Can be "Normal", "Light", "Mono", "HorizontalLcd"
-config.cell_width = 1.0
--- config.cell_width = 1.1
--------------------------------------------
 
-config.window_background_opacity = 0.50
+------------------------------------------
+
+
+-- config.window_background_opacity = 1.0
+config.window_background_opacity = 0.70
 config.enable_wayland = true
 
 if os.getenv("XDG_CURRENT_DESKTOP") == "Hyprland" or
-   os.getenv("XDG_SESSION_DESKTOP") == "hyprland" then
+    os.getenv("XDG_SESSION_DESKTOP") == "sway" or
+    os.getenv("XDG_SESSION_DESKTOP") == "hyprland" then
     config.enable_wayland = false
 end
 
-
-
-
--- config.enable_wayland = false
 config.prefer_egl = true
 
+
+------------------------------------------
+
+
+-- config.font = wezterm.font("GeistMono NF", {weight = 'Regular', italic=false})
+-- config.font = wezterm.font("Victor Mono", {weight = 'Medium'})
+config.font = wezterm.font("ZedMono NFM", {weight = 'Medium'})
+-- config.font = wezterm.font("MartianMono NF", {weight = 'Regular'})
+-- config.font = wezterm.font("BlexMono Nerd Font", {weight = 'Regular'})
 -------------------------------------------
-config.font_size = 10.7
+config.font_size = 10.6
 config.line_height = 1.0
 -------------------------------------------
--- config.line_height = 1.0
--- config.font_size = 11.0
+-- config.font_size = 9
+-- config.line_height = 1.2
 -------------------------------------------
+config.cell_width = 1.0
+
+
+config.freetype_load_target = "Light" -- Can be "Normal", "Light", "Mono", "HorizontalLcd"
+config.freetype_render_target = "HorizontalLcd" -- Can be "Normal", "Light", "Mono", "HorizontalLcd"
+
+
+-------------------------------------------
+
 
 local padding = 8
 
 config.window_padding = {
-	left = padding,
-	right = padding,
-	top = padding,
-	bottom = padding,
+    left = padding,
+    right = padding,
+    top = padding,
+    bottom = padding,
 }
 config.window_frame = {
-	font = wezterm.font({ family = "ZedMono NF", weight = "Regular"}),
-	font_size = 10,
-	-- active_titlebar_bg = "#0c0b0f",
-	-- active_titlebar_bg = "#181616",
+    font = wezterm.font({ family = "ZedMono NF", weight = "Regular"}),
+    font_size = 10,
 }
 
 
@@ -133,27 +139,15 @@ config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 
 wezterm.on("update-right-status", function(window, _)
-  local time = wezterm.strftime("%Y-%m-%d %H:%M:%S")
+    local time = wezterm.strftime("%d %b'%y - %H:%M:%S")
 
-  window:set_right_status(
-    wezterm.format({
-      { Foreground = { Color = "#aaaaaa" } },
-      { Text = " " .. time .. " " },
-    })
-  )
+    window:set_right_status(
+        wezterm.format({
+            { Foreground = { Color = "#aaaaaa" } },
+            { Text = " " .. time .. " " },
+        })
+    )
 end)
-
--- wezterm.on("update-status", function(window, pane)
--- 	-- local date = wezterm.strftime("%I:%M%p :: %m-%d-%Y")
--- 	window:set_left_status(wezterm.format({
--- 		{
---             -- Text = " " .. date .. " ",
---             Text = " " .. "shrey..." .. " ",
---         },
--- 	}))
--- end)
---
-
 
 config.keys = {
     {key="[", mods="ALT", action=wezterm.action{ActivateTabRelative=-1}},
@@ -163,6 +157,10 @@ config.keys = {
     {key="h", mods="ALT", action=wezterm.action{ActivatePaneDirection="Left"}},
     {key="RightArrow", mods="ALT", action=wezterm.action{ActivatePaneDirection="Right"}},
     {key="l", mods="ALT", action=wezterm.action{ActivatePaneDirection="Right"}},
+    {key="UpArrow", mods="ALT", action=wezterm.action{ActivatePaneDirection="Up"}},
+    {key="k", mods="ALT", action=wezterm.action{ActivatePaneDirection="Left"}},
+    {key="DownArrow", mods="ALT", action=wezterm.action{ActivatePaneDirection="Down"}},
+    {key="j", mods="ALT", action=wezterm.action{ActivatePaneDirection="Right"}},
     {key="h", mods="ALT|SHIFT", action=wezterm.action{SplitHorizontal = { domain = "CurrentPaneDomain" }}},
     {key="v", mods="ALT|SHIFT", action=wezterm.action{SplitVertical = { domain = "CurrentPaneDomain" }}},
 
@@ -191,6 +189,6 @@ config.keys = {
         window:set_config_overrides(overrides)
     end),
 	},
-  }
+}
 
 return config

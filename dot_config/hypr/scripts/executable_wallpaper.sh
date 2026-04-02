@@ -6,16 +6,28 @@ pkill swaybg
 sleep 0.5
 # Start new swaybg instance
 # swaybg -i "/home/shrey/Documents/wallpapers/john-towner-3Kv48NS4WUU-unsplash.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/bd764bb25d49a05105060185774ba14cd2c846f7.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/konstantin-kleine-V1NVvXmO_dk-unsplash.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/vo9lyx14s41a1(1).jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/jilbert-ebrahimi-QGehbt2b6iQ-unsplash.jpg" -m fill &
+swaybg -i "/home/shrey/Documents/wallpapers/perry-merrity-ii-5P0lI61BIj8-unsplash.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/clay-banks-kfSSaNuJLFY-unsplash.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/chris-barbalis--nYBR0LFTvQ-unsplash.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/tommy-l--gOAkuwqc7w-unsplash.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/adam-wilson-ktDODr-3tvY-unsplash.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/robby-mccullough-_rLDh9IFHf8-unsplash.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/leaves-7590923_1920.jpg" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/日本 #6733_scaled.jpg" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/pawel-czerwinski-tMbQpdguDVQ-unsplash-mirrored.jpg" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/clay-banks-u27Rrbs9Dwc-unsplash.jpg" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/a_group_of_purple_flowers.jpg" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/Gradient/8.jpg" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/Gradient/6.jpg" -m fill &
-swaybg -i "/home/shrey/Documents/wallpapers/a_snowy_mountain_with_dark_clouds.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/a_snowy_mountain_with_dark_clouds.jpg" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/superray.png" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/eldenring1.jpg" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/buildingsorange.jpg" -m fill &
+# swaybg -i "/home/shrey/Documents/wallpapers/mr-marco-QP1dUyQ8WsI-unsplash.jpg" -m fill &
 # swaybg -i "/home/shrey/Documents/wallpapers/Gradient/7.png" -m fill &
 
 # # Initialize swww and set wallpaper
